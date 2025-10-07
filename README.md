@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+#Simple Notes App
+Welcome to our technical assignment!
+This short project will help us understand how you approach coding, structure your work, use Git & GitHub. Feel free to ask questions or for clarification.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Duration
+This project is designed to be completed in **1–2 days**(by Wednesday, 8th October).  
+We’re not looking for perfection, we just want to see how you approach problems, structure code, and use the basics of React, Node, or Laravel.
 
-## Available Scripts
+### Goal
+Build a very simple **Notes App** that allows a user to :
+- Add a note (title + content)
+- View all notes
+- Edit a note
+- Delete a note
+You can choose React, Node.js or Laravel depending on your area of focus or comfort.
 
-In the project directory, you can run:
+### Instructions
+1. Fork this repository to your own GitHub account.
+2. Create a new folder under the /submissions directory using your full name (e.g. submissions/BrianMwangi/).
+3. Inside your folder, create your project files
+4. Include a README.md inside your folder with:
+	- Short project description
+	- Setup steps (how to run it)
+	- Any notes or improvements you'd make
+5. Once done, push your code to your forked repository.
+6. Finally, open a Pull Request to this main repo.
 
-### `npm start`
+#### Frontend ![React Badge](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+**Requirements**:
+- Create a simple page to list all notes.
+- Add a form to create a new note.
+- Allow deleting and editing notes.
+- Data can be stored in memory (just using React state) or fetched from an API if backend if you will be also build the backend.
+**What we'll look for**:
+- Understanding of  React basics (`useState`, `useEffect`).
+- Clean, organized components.
+- Basic form handling and event management.
+- Simple styling or use of any CSS framework
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Backend ![Laravel Badge](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white) or ![Node.js Badge](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
+**Requirements**:
+- Build a REST API with endpoints:
+```
+GET /notes
+POST /notes
+PUT /notes/:id
+DELETE /notes/:id
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+- Each note should have:
+```
+{
+  "id": 1,
+  "title": "Example title",
+  "content": "Example content"
+}
+```
+- Store data in a JSON file or an SQL database
+- Include basic validation (e.g. title is required)
+**What we'll look for**:
+- Proper REST structure
+- Clean, readable code
+- Basic error handling
+- Use of framework features (routes, controllers, etc.)
 
-### `npm test`
+#### Evaluation Criteria
+| Category            | Weight | Description                              |
+| ------------------- | ------ | ---------------------------------------- |
+| Functionality       | 30%    | App runs and basic CRUD works            |
+| Code Clarity        | 25%    | Clean, readable, and organized           |
+| Git Usage           | 20%    | Commit messages, structure, pull request |
+| Effort & Initiative | 15%    | Documentation and extra effort           |
+| Presentation        | 10%    | Clear folder, readme, and overall setup  |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+>>>>>>> 55e2d4da73008e3f69d54d691f9c2d35983ac0df
