@@ -1,75 +1,37 @@
-#Simple Notes App
-Welcome to our technical assignment!
-This short project will help us understand how you approach coding, structure your work, use Git & GitHub. Feel free to ask questions or for clarification.
+# Simple Notes App (Vite + React)
 
-### Duration
-This project is designed to be completed in **1–2 days**(by Wednesday, 8th October).  
-We’re not looking for perfection, we just want to see how you approach problems, structure code, and use the basics of React, Node, or Laravel.
+## Short Project Description
+This is a simple React-based notes application built with Vite for fast development and builds. It allows users to create, view, edit, and delete notes. Notes are stored in memory using React state (persists during the session but resets on page refresh). The app uses modular components for clean organization and includes basic validation (e.g., required title) and user confirmations for deletions.
 
-### Goal
-Build a very simple **Notes App** that allows a user to :
-- Add a note (title + content)
-- View all notes
-- Edit a note
-- Delete a note
-You can choose React, Node.js or Laravel depending on your area of focus or comfort.
+Key React concepts demonstrated:
+- `useState` for managing notes list, form inputs, and editing state.
+- `useEffect` for resetting form on edit/cancel.
+- Event handling for forms and buttons.
+- Conditional rendering (e.g., edit vs. add mode).
 
-### Instructions
-1. Fork this repository to your own GitHub account.
-2. Create a new folder under the /submissions directory using your full name (e.g. submissions/BrianMwangi/).
-3. Inside your folder, create your project files
-4. Include a README.md inside your folder with:
-	- Short project description
-	- Setup steps (how to run it)
-	- Any notes or improvements you'd make
-5. Once done, push your code to your forked repository.
-6. Finally, open a Pull Request to this main repo.
+Vite is used for its superior performance over Create React App. No backend is used, keeping it frontend-focused as per the assignment options.
 
-#### Frontend ![React Badge](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-**Requirements**:
-- Create a simple page to list all notes.
-- Add a form to create a new note.
-- Allow deleting and editing notes.
-- Data can be stored in memory (just using React state) or fetched from an API if backend if you will be also build the backend.
-**What we'll look for**:
-- Understanding of  React basics (`useState`, `useEffect`).
-- Clean, organized components.
-- Basic form handling and event management.
-- Simple styling or use of any CSS framework
+## Setup Steps
+1. Ensure Node.js (v14+) and npm are installed.
+2. Clone/fork the repo and navigate to `submissions/YourFullName/simple-notes-app/`.
+3. Run `npm install` to install dependencies (React + Vite).
+4. Run `npm run dev` to launch the app at `http://localhost:5173`.
+5. For production: `npm run build` (outputs to `dist/` folder).
+6. Test CRUD operations:
+   - Add a note with title and content.
+   - Edit by clicking "Edit" (form pre-fills).
+   - Delete with confirmation prompt.
 
-#### Backend ![Laravel Badge](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white) or ![Node.js Badge](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
-**Requirements**:
-- Build a REST API with endpoints:
-```
-GET /notes
-POST /notes
-PUT /notes/:id
-DELETE /notes/:id
+## Notes & Improvements I'd Make
+- **Strengths**: Clean, readable code with separated concerns (components). Basic error handling, responsive CSS, and Vite's fast HMR for smooth dev experience.
+- **Effort**: Implemented in ~2 hours; focused on functionality and clarity. Switched to Vite for modern tooling.
+- **Potential Improvements**:
+  - Add localStorage for persistence across sessions.
+  - Integrate a backend (e.g., Node.js Express API with JSON file storage) for real data fetching—endpoints like `GET /notes` could replace state.
+  - Use a CSS framework like Tailwind CSS (easy to add via Vite plugins).
+  - Add more validation (e.g., max length) and loading states.
+  - Unit tests with Vitest (Vite's testing tool) or Jest for components.
+  - Accessibility improvements (e.g., ARIA labels).
+  - Environment variables for API keys if extending to backend.
 
-```
-- Each note should have:
-```
-{
-  "id": 1,
-  "title": "Example title",
-  "content": "Example content"
-}
-```
-- Store data in a JSON file or an SQL database
-- Include basic validation (e.g. title is required)
-**What we'll look for**:
-- Proper REST structure
-- Clean, readable code
-- Basic error handling
-- Use of framework features (routes, controllers, etc.)
-
-#### Evaluation Criteria
-| Category            | Weight | Description                              |
-| ------------------- | ------ | ---------------------------------------- |
-| Functionality       | 30%    | App runs and basic CRUD works            |
-| Code Clarity        | 25%    | Clean, readable, and organized           |
-| Git Usage           | 20%    | Commit messages, structure, pull request |
-| Effort & Initiative | 15%    | Documentation and extra effort           |
-| Presentation        | 10%    | Clear folder, readme, and overall setup  |
-
->>>>>>> 55e2d4da73008e3f69d54d691f9c2d35983ac0df
+This meets the evaluation criteria: Full CRUD functionality, organized code, Git-friendly structure, and clear documentation.
